@@ -2,6 +2,8 @@ import { useState } from 'react';
 import axios from 'axios'; 
 import { useNavigate } from 'react-router-dom'; 
 
+
+
 function AddArticles() { 
     const navigate = useNavigate(); 
     const [reference, setReference] = useState(""); 
@@ -11,6 +13,7 @@ function AddArticles() {
     const [prixVente, setPrixVente] = useState(""); 
     const [qtestock, setQtestock] = useState(""); 
     const [imageartpetitf, setImageartpetitf] = useState(""); 
+    
 
     const handleSubmit = (e) => { 
         e.preventDefault(); 
